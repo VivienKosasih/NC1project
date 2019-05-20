@@ -53,8 +53,8 @@ class ViewController: UIViewController {
     @objc func handlePan(sender: UIPanGestureRecognizer){
         let cupView = sender.view!
         
-        var loopImage = [waterImageView, water2, water3, water4, water5, water6, water7]
-        
+//        var loopImage = [waterImageView, water2, water3, water4, water5, water6, water7]
+//
         
         switch sender.state {
         case .began, .changed:
@@ -66,29 +66,19 @@ class ViewController: UIViewController {
                 cupEmptyImagerView.isHidden = false
                 waterImageView.isHidden = false
                 
-                for _ in loopImage{
-                    
-                }
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                    self.waterImageView.isHidden = true
-                    self.water2.isHidden = false
+                    self.picAnimate(view: self.waterImageView, viewPlusOne: self.water2)
                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                        self.water2.isHidden = true
-                        self.water3.isHidden = false
+                        self.picAnimate(view: self.water2, viewPlusOne: self.water3)
                         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                            self.water3.isHidden = true
-                            self.water4.isHidden = false
+                            self.picAnimate(view: self.water3, viewPlusOne: self.water4)
                             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                                self.water4.isHidden = true
-                                self.water5.isHidden = false
+                                self.picAnimate(view: self.water4, viewPlusOne: self.water5)
                                 DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                                    self.water5.isHidden = true
-                                    self.water6.isHidden = false
+                                    self.picAnimate(view: self.water5, viewPlusOne: self.water6)
                                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                                        self.water6.isHidden = true
-                                        self.water7.isHidden = false
-                                        self.manShockImageView.isHidden = false
+                                        self.picAnimate(view: self.water6, viewPlusOne: self.water7)
                                         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
                                             self.water7.isHidden = true
                                             self.manImageView.isHidden = true
@@ -103,7 +93,6 @@ class ViewController: UIViewController {
                         }
                     }
                 }
-            
             }else{
                returnView(view: cupView)
             }
@@ -128,12 +117,16 @@ class ViewController: UIViewController {
         })
     }
     
-
-    
     func deleteView(view : UIView){
         UIView.animate(withDuration: 0.3, animations: {
             view.alpha = 0.0
         })
+    }
+    
+    func picAnimate(view : UIView, viewPlusOne : UIView){
+            view.isHidden = true
+            viewPlusOne.isHidden = false
+        
     }
     
 
