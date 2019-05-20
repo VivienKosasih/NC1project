@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NC1project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cup" translatesAutoresizingMaskIntoConstraints="NO" id="l6i-0n-naM">
+                                <rect key="frame" x="107" y="492" width="200" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man copy" translatesAutoresizingMaskIntoConstraints="NO" id="HEb-TD-SNP">
+                                <rect key="frame" x="70" y="119" width="260" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cupempty" translatesAutoresizingMaskIntoConstraints="NO" id="o10-LG-B9c">
+                                <rect key="frame" x="276" y="275" width="118" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="XFT-A9-GwE">
+                                <rect key="frame" x="289" y="372" width="101" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water3" translatesAutoresizingMaskIntoConstraints="NO" id="7mm-eP-NEm">
+                                <rect key="frame" x="299" y="375" width="87" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water4" translatesAutoresizingMaskIntoConstraints="NO" id="Lrm-ah-0x1">
+                                <rect key="frame" x="297" y="404" width="94" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water2" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-Hr-QUc">
+                                <rect key="frame" x="296" y="380" width="90" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Water5" translatesAutoresizingMaskIntoConstraints="NO" id="iMK-uV-lmQ">
+                                <rect key="frame" x="310" y="421" width="75" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water7" translatesAutoresizingMaskIntoConstraints="NO" id="qZR-Of-hg3">
+                                <rect key="frame" x="301" y="435" width="99" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Water8" translatesAutoresizingMaskIntoConstraints="NO" id="ycY-RM-Awe">
+                                <rect key="frame" x="314" y="443" width="81" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man shock copy" translatesAutoresizingMaskIntoConstraints="NO" id="GRP-nr-WBr">
+                                <rect key="frame" x="70" y="119" width="260" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man vomit copy" translatesAutoresizingMaskIntoConstraints="NO" id="FZT-Y9-vmH">
+                                <rect key="frame" x="16" y="283" width="382" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cupEmptyImagerView" destination="o10-LG-B9c" id="MDN-Fg-PNW"/>
+                        <outlet property="cupImageView" destination="l6i-0n-naM" id="ork-kD-O3B"/>
+                        <outlet property="manImageView" destination="HEb-TD-SNP" id="t0J-Vc-fAm"/>
+                        <outlet property="manShockImageView" destination="GRP-nr-WBr" id="W00-GD-2ZM"/>
+                        <outlet property="manVomitImageView" destination="FZT-Y9-vmH" id="yKo-Hy-S7M"/>
+                        <outlet property="water2" destination="NeY-Hr-QUc" id="LB9-S5-qXQ"/>
+                        <outlet property="water3" destination="7mm-eP-NEm" id="SJD-AH-5uU"/>
+                        <outlet property="water4" destination="Lrm-ah-0x1" id="OWk-WA-YiC"/>
+                        <outlet property="water5" destination="iMK-uV-lmQ" id="kU5-ES-Zpo"/>
+                        <outlet property="water6" destination="qZR-Of-hg3" id="PxN-U4-FZl"/>
+                        <outlet property="water7" destination="ycY-RM-Awe" id="W3J-Vi-5Ai"/>
+                        <outlet property="waterImageView" destination="XFT-A9-GwE" id="hNU-I3-IuH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2681" y="-183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cup" width="185" height="380"/>
+        <image name="Water5" width="135" height="105"/>
+        <image name="Water8" width="115" height="97"/>
+        <image name="cupempty" width="184" height="379"/>
+        <image name="man copy" width="405" height="405"/>
+        <image name="man shock copy" width="405" height="405"/>
+        <image name="man vomit copy" width="405" height="520"/>
+        <image name="water" width="159" height="211"/>
+        <image name="water2" width="155" height="192"/>
+        <image name="water3" width="150" height="169"/>
+        <image name="water4" width="146" height="154"/>
+        <image name="water7" width="117" height="96"/>
+    </resources>
+</document>
