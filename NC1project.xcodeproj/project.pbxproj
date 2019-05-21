@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1ED34B2222923F5C0013DCA5 /* NC1project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC1project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ED34B2222923F5C0013DCA5 /* Ji2k.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ji2k.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED34B2522923F5C0013DCA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ED34B2722923F5C0013DCA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1ED34B2A22923F5C0013DCA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		1ED34B2322923F5C0013DCA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1ED34B2222923F5C0013DCA5 /* NC1project.app */,
+				1ED34B2222923F5C0013DCA5 /* Ji2k.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1ED34B2122923F5C0013DCA5 /* NC1project */ = {
+		1ED34B2122923F5C0013DCA5 /* Ji2k */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1ED34B3422923F5D0013DCA5 /* Build configuration list for PBXNativeTarget "NC1project" */;
+			buildConfigurationList = 1ED34B3422923F5D0013DCA5 /* Build configuration list for PBXNativeTarget "Ji2k" */;
 			buildPhases = (
 				1ED34B1E22923F5C0013DCA5 /* Sources */,
 				1ED34B1F22923F5C0013DCA5 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = NC1project;
+			name = Ji2k;
 			productName = NC1project;
-			productReference = 1ED34B2222923F5C0013DCA5 /* NC1project.app */;
+			productReference = 1ED34B2222923F5C0013DCA5 /* Ji2k.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1ED34B2122923F5C0013DCA5 /* NC1project */,
+				1ED34B2122923F5C0013DCA5 /* Ji2k */,
 			);
 		};
 /* End PBXProject section */
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1ED34B3422923F5D0013DCA5 /* Build configuration list for PBXNativeTarget "NC1project" */ = {
+		1ED34B3422923F5D0013DCA5 /* Build configuration list for PBXNativeTarget "Ji2k" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1ED34B3522923F5D0013DCA5 /* Debug */,

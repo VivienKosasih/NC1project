@@ -41,7 +41,6 @@ class ViewController: UIViewController {
         addPanGesture(view: cupImageView)
         cupViewOrigin = cupImageView.frame.origin
         view.bringSubviewToFront(cupImageView)
-        
        
     }
     
@@ -52,9 +51,6 @@ class ViewController: UIViewController {
     
     @objc func handlePan(sender: UIPanGestureRecognizer){
         let cupView = sender.view!
-        
-//        var loopImage = [waterImageView, water2, water3, water4, water5, water6, water7]
-//
         
         switch sender.state {
         case .began, .changed:
@@ -78,6 +74,7 @@ class ViewController: UIViewController {
                                 DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
                                     self.picAnimate(view: self.water5, viewPlusOne: self.water6)
                                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+                                          self.manShockImageView.isHidden = false
                                         self.picAnimate(view: self.water6, viewPlusOne: self.water7)
                                         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
                                             self.water7.isHidden = true
@@ -126,7 +123,6 @@ class ViewController: UIViewController {
     func picAnimate(view : UIView, viewPlusOne : UIView){
             view.isHidden = true
             viewPlusOne.isHidden = false
-        
     }
     
 
