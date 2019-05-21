@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var water6: UIImageView!
     @IBOutlet weak var water7: UIImageView!
     
+
+    
     var cupViewOrigin: CGPoint!
     
     var audio : AVAudioPlayer = AVAudioPlayer()
@@ -43,9 +45,8 @@ class ViewController: UIViewController {
         cupViewOrigin = cupImageView.frame.origin
         view.bringSubviewToFront(cupImageView)
  
-
-       
     }
+    
     
     func addPanGesture(view : UIView){
         let pan = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(sender:)))
