@@ -1,5 +1,6 @@
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -20,8 +21,8 @@ class ViewController: UIViewController {
     
     var cupViewOrigin: CGPoint!
     
-
-
+    var audio : AVAudioPlayer = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +42,8 @@ class ViewController: UIViewController {
         addPanGesture(view: cupImageView)
         cupViewOrigin = cupImageView.frame.origin
         view.bringSubviewToFront(cupImageView)
+ 
+
        
     }
     
@@ -64,6 +67,8 @@ class ViewController: UIViewController {
                 
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+                    self.playAudioSlurp()
+                    
                     self.picAnimate(view: self.waterImageView, viewPlusOne: self.water2)
                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
                         self.picAnimate(view: self.water2, viewPlusOne: self.water3)
@@ -75,21 +80,22 @@ class ViewController: UIViewController {
                                     self.picAnimate(view: self.water5, viewPlusOne: self.water6)
                                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
                                           self.manShockImageView.isHidden = false
+                                            self.playAudioshock()
                                         self.picAnimate(view: self.water6, viewPlusOne: self.water7)
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
                                             self.water7.isHidden = true
                                             self.manImageView.isHidden = true
                                             self.cupEmptyImagerView.isHidden = true
                                             self.manShockImageView.isHidden = true
                                             self.manVomitImageView.isHidden = false
-                                            
+                                            self.playAudioUee()
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                }
+                    }
             }else{
                returnView(view: cupView)
             }
@@ -125,6 +131,30 @@ class ViewController: UIViewController {
             viewPlusOne.isHidden = false
     }
     
+    
+    func playAudioSlurp(){
+        do{
+            let audioPath = Bundle.main.path(forResource: "Slurp", ofType: "m4a")
+            try audio = AVAudioPlayer (contentsOf: NSURL (fileURLWithPath: audioPath!)as URL)
+            audio.play()
+        }catch{}
+    }
+    
+    func playAudioUee(){
+        do{
+            let audioPath = Bundle.main.path(forResource: "vomiting", ofType: "wav")
+            try audio = AVAudioPlayer (contentsOf: NSURL (fileURLWithPath: audioPath!)as URL)
+            audio.play()
+        }catch{}
+    }
+    
+    func playAudioshock(){
+        do{
+            let audioPath = Bundle.main.path(forResource: "Shocked", ofType: "mp3")
+            try audio = AVAudioPlayer (contentsOf: NSURL (fileURLWithPath: audioPath!)as URL)
+            audio.play()
+        }catch{}
+    }
 
 }
 
